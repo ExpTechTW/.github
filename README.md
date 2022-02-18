@@ -32,6 +32,18 @@
 ------
 
 ## 開發中
+#### Answer
+- 類型: `Web App`
+- 概述: 課堂搶答網站
+- 狀態: `開發中`
+#### RecordTree
+- 類型: `App (Android/iOS)`
+- 概述: 一個用來記錄生活的社交軟體
+- 狀態: `開發中`
+#### API
+- 類型: `Server`
+- 概述: 為 ExpTech 提供服務的 API 服務器
+- 狀態: `開發中`
 #### Rocket TVC固體火箭
 - 類型: `null`
 - 概述: TVC火箭
@@ -42,6 +54,26 @@
 #### ExpTech_Core
 - 類型: `Minecraft (Spigot)`
 - 概述: Spigot 所有插件的核心
+- 狀態: `日常維護`
+#### Rocket TVC固體火箭
+- 類型: `null`
+- 概述: TVC火箭
+- 狀態: `開發中`
+#### ExpTech_DataRecord
+- 類型: `Minecraft (Spigot)`
+- 概述: 記錄伺服器中各項 統計數據 的插件
+- 狀態: `日常維護`
+#### ExpTech_Economy
+- 類型: `Minecraft (Spigot)`
+- 概述: 和 網頁 同步的 經濟 插件
+- 狀態: `日常維護`
+#### ExpTech_Website
+- 類型: `Web`
+- 概述: 經濟 插件的 網站 頁面
+- 狀態: `日常維護`
+#### ExpTech_DC_Bot 
+- 類型: `Discord Bot`
+- 概述: 對接 API 的 Discord Bot
 - 狀態: `日常維護`
 ------
 
@@ -66,6 +98,10 @@
 - 類型: `App (Android/iOS)`
 - 概述: 照片分享平台
 - 狀態: `棄置項目` `維護困難`
+#### 黑特灣中(行動版)
+- 類型: `App (Android)`
+- 概述: 粉專「黑特灣中」行動版
+- 狀態: `棄置項目` `維護困難`
 #### ExpTech
 - 類型: `App (Android/iOS)`
 - 概述: RecordTree 的前身
@@ -78,6 +114,14 @@
 - 類型: `App (Android)`
 - 概述: 學生交流平台
 - 狀態: `棄置項目` `概念尚未成熟`
+#### 矽科技 | 智能設備
+- 類型: `App (Android)`
+- 概述: 矽科技設備控制工具
+- 狀態: `棄置項目` `已由新版取代`
+#### ExpTech_Discord_Bot
+- 類型: `Discord Bot`
+- 概述: 對接 API serverData 功能的 Discord Bot
+- 狀態: `停止支援` `維護困難`
 #### dwhs_it
 - 類型: `App (Android)`
 - 概述: 各類破解軟體下載工具
@@ -90,14 +134,6 @@
 - 類型: `App (Android)`
 - 概述: 台南各區每小時天氣預報工具
 - 狀態: `停止支援` `已由新版取代`
-#### 矽科技 | 智能設備
-- 類型: `App (Android)`
-- 概述: 矽科技設備控制工具
-- 狀態: `棄置項目` `已由新版取代`
-#### 黑特灣中(行動版)
-- 類型: `App (Android)`
-- 概述: 粉專「黑特灣中」行動版
-- 狀態: `棄置項目` `維護困難`
 ------
 
 ## 貢獻者
