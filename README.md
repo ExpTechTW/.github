@@ -37,6 +37,7 @@
 - 類型: `Web App`
 - 概述: 課堂搶答網站
 - 狀態: `開發中`
+- [`Github`](https://github.com/ExpTechTW/Answer)
 #### RecordTree
 - 類型: `App (Android/iOS)`
 - 概述: 一個用來記錄生活的社交軟體
@@ -56,10 +57,6 @@
 - 類型: `Minecraft (Spigot)`
 - 概述: Spigot 所有插件的核心
 - 狀態: `日常維護`
-#### Rocket TVC固體火箭
-- 類型: `null`
-- 概述: TVC火箭
-- 狀態: `開發中`
 #### ExpTech_DataRecord
 - 類型: `Minecraft (Spigot)`
 - 概述: 記錄伺服器中各項 統計數據 的插件
