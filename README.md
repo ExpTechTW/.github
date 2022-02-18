@@ -78,6 +78,26 @@
 ------
 
 ## 棄置項目、停止支援
+#### ExpTech_Here
+- 類型: `Minecraft (Spigot)`
+- 概述: 顯示自身 位置訊息 的插件
+- 狀態: `開發完成`
+#### ExpTech_Organization
+- 類型: `Minecraft (Spigot)`
+- 概述: 讓伺服器擁有 組織 功能的插件
+- 狀態: `開發完成`
+#### ExpTech_BanSystem
+- 類型: `Minecraft (Spigot)`
+- 概述: 讓伺服器擁有 雲端防護 功能的插件
+- 狀態: `開發完成`
+#### ExpTech_FreeCamera
+- 類型: `Minecraft (Spigot)`
+- 概述: 讓玩家擁有 自由視角 功能的插件
+- 狀態: `開發完成`
+#### Spigot-PingTag
+- 類型: `Minecraft (Spigot)`
+- 概述: 在 Spigot 中顯示 Ping 的插件
+- 狀態: `開發完成`
 #### 天氣 Shi.Inc
 - 類型: `App（Android）`
 - 概述: 台南各區每小時天氣預報
@@ -94,6 +114,54 @@
 - 類型: `App (Android)`
 - 概述: 擁有各式功能的 App
 - 狀態: `開發完成`
+#### Nukkit-Engineer
+- 類型: `Minecraft (PowerNukkit)`
+- 概述: 修復 PowerNukkit 中一些錯誤 的插件
+- 狀態: `開發完成`
+#### Nukkit-PingTag
+- 類型: `Minecraft (PowerNukkit)`
+- 概述: 在 PowerNukkit 中顯示 Ping 的插件
+- 狀態: `開發完成`
+#### Nukkit-ProhibitCommand
+- 類型: `Minecraft (PowerNukkit)`
+- 概述: 在 PowerNukkit 中禁止特定指令 的插件
+- 狀態: `開發完成`
+#### MCDR_LIST
+- 類型: `Minecraft (Fabric_MCDR)`
+- 概述: 在伺服器中顯示 所有玩家位置 的插件
+- 狀態: `開發完成`
+#### MCDR_Free_Camera
+- 類型: `Minecraft (Fabric_MCDR)`
+- 概述: 讓玩家擁有 自由視角 功能的插件
+- 狀態: `開發完成`
+#### Nukkit-AntiCheat
+- 類型: `Minecraft (PowerNukkit)`
+- 概述: 在 PowerNukkit 中反作弊 的插件
+- 狀態: `停止支援` `缺少依賴`
+#### BDS-AntiCheat
+- 類型: `Minecraft (Bedrock Dedicated Server)`
+- 概述: 在 Bedrock Dedicated Server 中反作弊 的插件
+- 狀態: `停止支援` `缺少依賴`
+#### Discord-Economy-Bot
+- 類型: `Discord Bot`
+- 概述: 提供 經濟 玩法的 Discord Bot
+- 狀態: `停止支援` `概念驗證用`
+#### API-AntiCheat
+- 類型: `Server`
+- 概述: 為 Nukkit-AntiCheat 提供服務的 API
+- 狀態: `停止支援` `概念驗證用`
+#### SEVCS
+- 類型: `Arduino`
+- 概述: 時實計算 電動車 能耗並同步到 App
+- 狀態: `棄置項目` `概念驗證用`
+#### Spigot-Enginner
+- 類型: `Minecraft (Spigot)`
+- 概述: 修復 Geyser 中的一些問題
+- 狀態: `棄置項目` `概念驗證用`
+#### Discord-Bot-Public
+- 類型: `Discord Bot`
+- 概述: Discord Bot
+- 狀態: `棄置項目` `維護困難`
 #### Funlearn
 - 類型: `App (Android/iOS)`
 - 概述: 照片分享平台
