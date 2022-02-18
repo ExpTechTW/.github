@@ -10,6 +10,7 @@
 - [目標概述](#目標概述)
 - [開發中](#開發中)
 - [日常維護、擱置項目](#日常維護擱置項目)
+- [開發完成](#開發完成)
 - [棄置項目、停止支援](#棄置項目停止支援)
 - [貢獻者](#貢獻者)
 - [發佈規則](#發佈規則)
@@ -76,8 +77,7 @@
 - 概述: 對接 API 的 Discord Bot
 - 狀態: `日常維護`
 ------
-
-## 棄置項目、停止支援
+## 開發完成
 #### ExpTech_Here
 - 類型: `Minecraft (Spigot)`
 - 概述: 顯示自身 位置訊息 的插件
@@ -134,22 +134,9 @@
 - 類型: `Minecraft (Fabric_MCDR)`
 - 概述: 讓玩家擁有 自由視角 功能的插件
 - 狀態: `開發完成`
-#### Nukkit-AntiCheat
-- 類型: `Minecraft (PowerNukkit)`
-- 概述: 在 PowerNukkit 中反作弊 的插件
-- 狀態: `停止支援` `缺少依賴`
-#### BDS-AntiCheat
-- 類型: `Minecraft (Bedrock Dedicated Server)`
-- 概述: 在 Bedrock Dedicated Server 中反作弊 的插件
-- 狀態: `停止支援` `缺少依賴`
-#### Discord-Economy-Bot
-- 類型: `Discord Bot`
-- 概述: 提供 經濟 玩法的 Discord Bot
-- 狀態: `停止支援` `概念驗證用`
-#### API-AntiCheat
-- 類型: `Server`
-- 概述: 為 Nukkit-AntiCheat 提供服務的 API
-- 狀態: `停止支援` `概念驗證用`
+-----
+
+## 棄置項目、停止支援
 #### SEVCS
 - 類型: `Arduino`
 - 概述: 時實計算 電動車 能耗並同步到 App
@@ -190,6 +177,22 @@
 - 類型: `Discord Bot`
 - 概述: 對接 API serverData 功能的 Discord Bot
 - 狀態: `停止支援` `維護困難`
+#### Nukkit-AntiCheat
+- 類型: `Minecraft (PowerNukkit)`
+- 概述: 在 PowerNukkit 中反作弊 的插件
+- 狀態: `停止支援` `缺少依賴`
+#### BDS-AntiCheat
+- 類型: `Minecraft (Bedrock Dedicated Server)`
+- 概述: 在 Bedrock Dedicated Server 中反作弊 的插件
+- 狀態: `停止支援` `缺少依賴`
+#### Discord-Economy-Bot
+- 類型: `Discord Bot`
+- 概述: 提供 經濟 玩法的 Discord Bot
+- 狀態: `停止支援` `概念驗證用`
+#### API-AntiCheat
+- 類型: `Server`
+- 概述: 為 Nukkit-AntiCheat 提供服務的 API
+- 狀態: `停止支援` `概念驗證用`
 #### dwhs_it
 - 類型: `App (Android)`
 - 概述: 各類破解軟體下載工具
