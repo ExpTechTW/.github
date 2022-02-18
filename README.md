@@ -42,14 +42,17 @@
 - 類型: `App (Android/iOS)`
 - 概述: 一個用來記錄生活的社交軟體
 - 狀態: `開發中`
+- [`Github`](https://github.com/ExpTechTW/RecordTree)
 #### API
 - 類型: `Server`
 - 概述: 為 ExpTech 提供服務的 API 服務器
 - 狀態: `開發中`
+- [`Github`](https://github.com/ExpTechTW/API)
 #### Rocket TVC固體火箭
 - 類型: `null`
 - 概述: TVC火箭
 - 狀態: `開發中`
+- [`Github`](https://github.com/ExpTechTW/Rocket)
 ------
 
 ## 日常維護、擱置項目
@@ -57,44 +60,54 @@
 - 類型: `Minecraft (Spigot)`
 - 概述: Spigot 所有插件的核心
 - 狀態: `日常維護`
+- [`Github`](https://github.com/ExpTechTW/ExpTech_Core)
 #### ExpTech_DataRecord
 - 類型: `Minecraft (Spigot)`
 - 概述: 記錄伺服器中各項 統計數據 的插件
 - 狀態: `日常維護`
+- [`Github`](https://github.com/ExpTechTW/ExpTech_DataRecord)
 #### ExpTech_Economy
 - 類型: `Minecraft (Spigot)`
 - 概述: 和 網頁 同步的 經濟 插件
 - 狀態: `日常維護`
+- [`Github`](https://github.com/ExpTechTW/ExpTech_Economy)
 #### ExpTech_Website
 - 類型: `Web`
 - 概述: 經濟 插件的 網站 頁面
 - 狀態: `日常維護`
+- [`Github`](https://github.com/ExpTechTW/ExpTech_Website)
 #### ExpTech_DC_Bot 
 - 類型: `Discord Bot`
 - 概述: 對接 API 的 Discord Bot
 - 狀態: `日常維護`
+- [`Github`](https://github.com/ExpTechTW/ExpTech_DC_Bot)
 ------
 ## 開發完成
 #### ExpTech_Here
 - 類型: `Minecraft (Spigot)`
 - 概述: 顯示自身 位置訊息 的插件
 - 狀態: `開發完成`
+- [`Github`](https://github.com/ExpTechTW/ExpTech_Here)
 #### ExpTech_Organization
 - 類型: `Minecraft (Spigot)`
 - 概述: 讓伺服器擁有 組織 功能的插件
 - 狀態: `開發完成`
+- [`Github`](https://github.com/ExpTechTW/ExpTech_Organization)
 #### ExpTech_BanSystem
 - 類型: `Minecraft (Spigot)`
 - 概述: 讓伺服器擁有 雲端防護 功能的插件
 - 狀態: `開發完成`
+- [`Github`](https://github.com/ExpTechTW/ExpTech_BanSystem)
 #### ExpTech_FreeCamera
 - 類型: `Minecraft (Spigot)`
 - 概述: 讓玩家擁有 自由視角 功能的插件
 - 狀態: `開發完成`
+- [`Github`](https://github.com/ExpTechTW/ExpTech_FreeCamera)
 #### Spigot-PingTag
 - 類型: `Minecraft (Spigot)`
 - 概述: 在 Spigot 中顯示 Ping 的插件
 - 狀態: `開發完成`
+- [`Github`](https://github.com/ExpTechTW/Spigot-PingTag)
 #### 天氣 Shi.Inc
 - 類型: `App（Android）`
 - 概述: 台南各區每小時天氣預報
@@ -115,22 +128,27 @@
 - 類型: `Minecraft (PowerNukkit)`
 - 概述: 修復 PowerNukkit 中一些錯誤 的插件
 - 狀態: `開發完成`
+- [`Github`](https://github.com/ExpTechTW/Nukkit-Engineer)
 #### Nukkit-PingTag
 - 類型: `Minecraft (PowerNukkit)`
 - 概述: 在 PowerNukkit 中顯示 Ping 的插件
 - 狀態: `開發完成`
+- [`Github`](https://github.com/ExpTechTW/Nukkit-PingTag)
 #### Nukkit-ProhibitCommand
 - 類型: `Minecraft (PowerNukkit)`
 - 概述: 在 PowerNukkit 中禁止特定指令 的插件
 - 狀態: `開發完成`
+- [`Github`](https://github.com/ExpTechTW/Nukkit-ProhibitCommand)
 #### MCDR_LIST
 - 類型: `Minecraft (Fabric_MCDR)`
 - 概述: 在伺服器中顯示 所有玩家位置 的插件
 - 狀態: `開發完成`
+- [`Github`](https://github.com/ExpTechTW/MCDR_LIST)
 #### MCDR_Free_Camera
 - 類型: `Minecraft (Fabric_MCDR)`
 - 概述: 讓玩家擁有 自由視角 功能的插件
 - 狀態: `開發完成`
+- [`Github`](https://github.com/ExpTechTW/MCDR_Free_Camera)
 -----
 
 ## 棄置項目、停止支援
@@ -138,14 +156,17 @@
 - 類型: `Arduino`
 - 概述: 時實計算 電動車 能耗並同步到 App
 - 狀態: `棄置項目` `概念驗證用`
+- [`Github`](https://github.com/ExpTechTW/SEVCS)
 #### Spigot-Enginner
 - 類型: `Minecraft (Spigot)`
 - 概述: 修復 Geyser 中的一些問題
 - 狀態: `棄置項目` `概念驗證用`
+- [`Github`](https://github.com/ExpTechTW/Spigot-Enginner)
 #### Discord-Bot-Public
 - 類型: `Discord Bot`
 - 概述: Discord Bot
 - 狀態: `棄置項目` `維護困難`
+- [`Github`](https://github.com/ExpTechTW/Discord-Bot-Public)
 #### Funlearn
 - 類型: `App (Android/iOS)`
 - 概述: 照片分享平台
@@ -174,22 +195,27 @@
 - 類型: `Discord Bot`
 - 概述: 對接 API serverData 功能的 Discord Bot
 - 狀態: `停止支援` `維護困難`
+- [`Github`](https://github.com/ExpTechTW/ExpTech_Discord_Bot)
 #### Nukkit-AntiCheat
 - 類型: `Minecraft (PowerNukkit)`
 - 概述: 在 PowerNukkit 中反作弊 的插件
 - 狀態: `停止支援` `缺少依賴`
+- [`Github`](https://github.com/ExpTechTW/Nukkit-AntiCheat)
 #### BDS-AntiCheat
 - 類型: `Minecraft (Bedrock Dedicated Server)`
 - 概述: 在 Bedrock Dedicated Server 中反作弊 的插件
 - 狀態: `停止支援` `缺少依賴`
+- [`Github`](https://github.com/ExpTechTW/BDS-AntiCheat)
 #### Discord-Economy-Bot
 - 類型: `Discord Bot`
 - 概述: 提供 經濟 玩法的 Discord Bot
 - 狀態: `停止支援` `概念驗證用`
+- [`Github`](https://github.com/ExpTechTW/Discord-Economy-Bot)
 #### API-AntiCheat
 - 類型: `Server`
 - 概述: 為 Nukkit-AntiCheat 提供服務的 API
 - 狀態: `停止支援` `概念驗證用`
+- [`Github`](https://github.com/ExpTechTW/API-AntiCheat)
 #### dwhs_it
 - 類型: `App (Android)`
 - 概述: 各類破解軟體下載工具
