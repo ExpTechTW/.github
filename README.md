@@ -33,6 +33,11 @@
 ------
 
 ## 開發中
+#### ExpTech-Home
+- 類型: `App (Android/iOS)`
+- 概述: 控制 ExpTech 相關 智能設備 的 應用程式
+- 狀態: `開發中`
+- [`Github`](https://github.com/ExpTechTW/ExpTech-Home)
 #### Answer
 - 類型: `Web App`
 - 概述: 課堂搶答網站
