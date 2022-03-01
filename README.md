@@ -5,7 +5,8 @@
 
 - 這是一個說明 目標 及 各項目狀態 的頁面
 
-## 索引
+## 索引狀態
+- [狀態](#狀態)
 - [目標概述](#目標概述)
 - [文檔](#文檔)
 - [開發中](#開發中)
@@ -15,6 +16,10 @@
 - [貢獻者](#貢獻者)
 - [發佈規則](#發佈規則)
 - [合作](#合作)
+
+## 狀態
+[![GitHub Trends SVG](https://api.githubtrends.io/user/svg/whes1015/langs?time_range=one_year&theme=dark)](https://githubtrends.io)
+[![GitHub Trends SVG](https://api.githubtrends.io/user/svg/whes1015/repos?time_range=one_year&theme=dark)](https://githubtrends.io)
 
 ## 目標概述
 - 建立 Websocket Server
