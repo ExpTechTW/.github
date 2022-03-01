@@ -20,6 +20,7 @@
 ## 狀態
 [![GitHub Trends SVG](https://api.githubtrends.io/user/svg/whes1015/langs?time_range=one_year&theme=dark)](https://githubtrends.io)
 [![GitHub Trends SVG](https://api.githubtrends.io/user/svg/whes1015/repos?time_range=one_year&theme=dark)](https://githubtrends.io)
+[![GitHub Trends SVG](https://api.githubtrends.io/user/svg/whes1015/repos?time_range=one_month&theme=dark)](https://githubtrends.io)
 
 ## 目標概述
 - 建立 Websocket Server
