@@ -3,6 +3,7 @@
 
 ------
 
+- 編程、設計、創意、實用 - 努力成為真正的高手
 - 用科技改變生活
 
 ## 索引
@@ -18,7 +19,7 @@
 [![GitHub Trends SVG](https://api.githubtrends.io/user/svg/whes1015/repos?time_range=one_month&theme=dark)](https://githubtrends.io)
 
 ## 貢獻者
-- whes1015 `文檔`
+- whes1015 `首席開發人員`
 
 ------
 
