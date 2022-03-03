@@ -50,11 +50,6 @@
 - 概述: 課堂搶答網站
 - 狀態: `開發中`
 - [`Github`](https://github.com/ExpTechTW/Answer)
-#### RecordTree
-- 類型: `App (Android/iOS)`
-- 概述: 一個用來記錄生活的社交軟體
-- 狀態: `開發中`
-- [`Github`](https://github.com/ExpTechTW/RecordTree)
 #### API
 - 類型: `Server`
 - 概述: 為 ExpTech 提供服務的 API 服務器
@@ -164,6 +159,10 @@
 -----
 
 ## 棄置項目、停止支援
+#### RecordTree
+- 類型: `App (Android/iOS)`
+- 概述: 一個用來記錄生活的社交軟體
+- 狀態: `棄置項目` `概念驗證用`
 #### SEVCS
 - 類型: `Arduino`
 - 概述: 時實計算 電動車 能耗並同步到 App
