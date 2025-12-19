@@ -18,6 +18,6 @@ jobs:
         uses: cicirello/user-statistician@v1
         with:
           image-file: images/org-languages.svg
-          max-languages: all
+          max-languages: auto
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
