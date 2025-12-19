@@ -1,0 +1,36 @@
+name: Org language breakdown
+
+on:
+  schedule:
+    - cron: "0 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  metrics:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Generate languages SVG
+        uses: lowlighter/metrics@latest
+        with:
+          # 建議用 PAT（見下方），GITHUB_TOKEN 通常只能保證讀到「目前 repo」資料
+          token: ${{ secrets.PAT_TOKEN }}
+
+          # 讓 action 把產物 commit 回這個 repo
+          committer_token: ${{ secrets.PAT_TOKEN }}
+          committer_branch: main
+
+          # 這裡填 org login
+          user: ExpTechTW
+
+          # 只輸出語言卡（不加其他區塊）
+          base: ""
+          filename: profile/metrics.languages.svg
+
+          plugin_languages: yes
+          plugin_languages_sections: most-used
+          plugin_languages_details: percentage, bytes-size
+          plugin_languages_limit: 8
+          plugin_languages_other: yes
