@@ -1,0 +1,23 @@
+name: org-language-stats
+
+on:
+  schedule:
+    - cron: "0 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  stats:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate stats SVG
+        uses: cicirello/user-statistician@v1
+        with:
+          image-file: images/org-languages.svg
+          max-languages: all
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
