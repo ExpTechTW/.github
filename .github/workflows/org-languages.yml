@@ -1,4 +1,4 @@
-name: Org language breakdown
+name: Org Metrics
 
 on:
   schedule:
@@ -14,34 +14,126 @@ jobs:
     permissions:
       contents: write
     steps:
+      # 1. 語言統計
       - name: Generate languages SVG
         uses: lowlighter/metrics@latest
         with:
-          # PAT token（需要 repo 和 read:org 權限）
           token: ${{ secrets.PAT_CLASSIC_TOKEN }}
-
-          # 輸出設定
           output_action: commit
           committer_branch: main
-          
-          # 組織名稱
           user: ExpTechTW
-
-          # 只輸出語言統計（不含其他區塊）
           base: ""
           filename: profile/metrics.languages.svg
-
-          # 語言插件設定
+          repositories_affiliations: owner, organization_member
+          repositories_forks: no
           plugin_languages: yes
           plugin_languages_sections: most-used
           plugin_languages_details: percentage, bytes-size
           plugin_languages_limit: 8
           plugin_languages_other: yes
-          plugin_languages_colors: github
-          plugin_languages_categories: programming, markup
-          
-          # 超時設定（避免組織 repo 太多時超時）
           plugin_languages_analysis_timeout: 30
-          
-          # 時區
+          config_timezone: Asia/Taipei
+
+      # 2. 組織基本資訊
+      - name: Generate base SVG
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.PAT_CLASSIC_TOKEN }}
+          output_action: commit
+          committer_branch: main
+          user: ExpTechTW
+          filename: profile/metrics.base.svg
+          base: header, activity, community, repositories
+          repositories_affiliations: owner, organization_member
+          config_timezone: Asia/Taipei
+
+      # 3. 貢獻日曆（等距視圖）
+      - name: Generate isocalendar SVG
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.PAT_CLASSIC_TOKEN }}
+          output_action: commit
+          committer_branch: main
+          user: ExpTechTW
+          base: ""
+          filename: profile/metrics.isocalendar.svg
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: half-year
+          config_timezone: Asia/Taipei
+
+      # 4. 近期活動
+      - name: Generate activity SVG
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.PAT_CLASSIC_TOKEN }}
+          output_action: commit
+          committer_branch: main
+          user: ExpTechTW
+          base: ""
+          filename: profile/metrics.activity.svg
+          plugin_activity: yes
+          plugin_activity_limit: 5
+          plugin_activity_days: 14
+          plugin_activity_filter: all
+          config_timezone: Asia/Taipei
+
+      # 5. 熱門 Repositories
+      - name: Generate repositories SVG
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.PAT_CLASSIC_TOKEN }}
+          output_action: commit
+          committer_branch: main
+          user: ExpTechTW
+          base: ""
+          filename: profile/metrics.repositories.svg
+          plugin_repositories: yes
+          plugin_repositories_featured: ExpTechTW/TREM-tauri, ExpTechTW/DPIP  # 替換成你想展示的 repo
+          config_timezone: Asia/Taipei
+
+      # 6. 貢獻者
+      - name: Generate contributors SVG
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.PAT_CLASSIC_TOKEN }}
+          output_action: commit
+          committer_branch: main
+          user: ExpTechTW
+          base: ""
+          filename: profile/metrics.contributors.svg
+          plugin_people: yes
+          plugin_people_types: contributors, members
+          plugin_people_limit: 24
+          plugin_people_size: 28
+          config_timezone: Asia/Taipei
+
+      # 7. 星星歷史
+      - name: Generate stargazers SVG
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.PAT_CLASSIC_TOKEN }}
+          output_action: commit
+          committer_branch: main
+          user: ExpTechTW
+          base: ""
+          filename: profile/metrics.stargazers.svg
+          plugin_stargazers: yes
+          plugin_stargazers_charts_type: classic
+          config_timezone: Asia/Taipei
+
+      # 8. 程式碼習慣
+      - name: Generate habits SVG
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.PAT_CLASSIC_TOKEN }}
+          output_action: commit
+          committer_branch: main
+          user: ExpTechTW
+          base: ""
+          filename: profile/metrics.habits.svg
+          plugin_habits: yes
+          plugin_habits_facts: yes
+          plugin_habits_charts: yes
+          plugin_habits_days: 14
+          plugin_habits_from: 200
           config_timezone: Asia/Taipei
