@@ -26,33 +26,10 @@
   </tr>
   <tr>
     <td align="center">
-      <img src="metrics.lines.svg" alt="Lines of Code" />
-    </td>
-    <td align="center">
       <img src="metrics.stargazers.svg" alt="Stargazers" />
-    </td>
-  </tr>
-</table>
-
----
-
-## Activity
-
-<table>
-  <tr>
-    <td align="center">
-      <img src="metrics.activity.svg" alt="Recent Activity" />
     </td>
     <td align="center">
       <img src="metrics.followup.svg" alt="Follow-up" />
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <img src="metrics.discussions.svg" alt="Discussions" />
-    </td>
-    <td align="center">
-      <img src="metrics.traffic.svg" alt="Traffic" />
     </td>
   </tr>
 </table>
@@ -71,6 +48,15 @@
 
 ---
 
-## Sponsors
+## Traffic & Sponsors
 
-![Sponsors](metrics.sponsors.svg)
+<table>
+  <tr>
+    <td align="center">
+      <img src="metrics.traffic.svg" alt="Traffic" />
+    </td>
+    <td align="center">
+      <img src="metrics.sponsors.svg" alt="Sponsors" />
+    </td>
+  </tr>
+</table>
