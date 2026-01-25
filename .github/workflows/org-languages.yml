@@ -131,30 +131,3 @@ jobs:
           plugin_introduction: yes
           plugin_introduction_title: yes
 
-      # 8. 流量統計
-      - name: 👀 Traffic
-        uses: lowlighter/metrics@latest
-        with:
-          token: ${{ secrets.PAT_CLASSIC_TOKEN }}
-          output_action: commit
-          committer_branch: ${{ env.BRANCH }}
-          user: ${{ env.USER }}
-          config_timezone: ${{ env.TIMEZONE }}
-          filename: profile/metrics.traffic.svg
-          base: ""
-          plugin_traffic: yes
-
-      # 9. 贊助者
-      - name: 💖 Sponsors
-        uses: lowlighter/metrics@latest
-        with:
-          token: ${{ secrets.PAT_CLASSIC_TOKEN }}
-          output_action: commit
-          committer_branch: ${{ env.BRANCH }}
-          user: ${{ env.USER }}
-          config_timezone: ${{ env.TIMEZONE }}
-          filename: profile/metrics.sponsors.svg
-          base: ""
-          plugin_sponsors: yes
-          plugin_sponsors_sections: goal, list
-          plugin_sponsors_size: 24

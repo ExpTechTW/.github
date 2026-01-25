@@ -46,17 +46,3 @@
 
 ![People](metrics.people.svg)
 
----
-
-## Traffic & Sponsors
-
-<table>
-  <tr>
-    <td align="center">
-      <img src="metrics.traffic.svg" alt="Traffic" />
-    </td>
-    <td align="center">
-      <img src="metrics.sponsors.svg" alt="Sponsors" />
-    </td>
-  </tr>
-</table>
