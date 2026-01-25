@@ -8,22 +8,43 @@ on:
 permissions:
   contents: write
 
+env:
+  USER: ExpTechTW
+  TIMEZONE: Asia/Taipei
+  BRANCH: main
+
 jobs:
   metrics:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
     steps:
-      # 1. 語言統計
-      - name: Generate languages SVG
+      # ═══════════════════════════════════════════════════════════════
+      # 核心指標
+      # ═══════════════════════════════════════════════════════════════
+
+      # 1. 組織基本資訊
+      - name: 📊 Base
         uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.PAT_CLASSIC_TOKEN }}
           output_action: commit
-          committer_branch: main
-          user: ExpTechTW
-          base: ""
+          committer_branch: ${{ env.BRANCH }}
+          user: ${{ env.USER }}
+          config_timezone: ${{ env.TIMEZONE }}
+          filename: profile/metrics.base.svg
+          base: header, activity, community, repositories
+          repositories_affiliations: owner, organization_member
+
+      # 2. 語言統計
+      - name: 💻 Languages
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.PAT_CLASSIC_TOKEN }}
+          output_action: commit
+          committer_branch: ${{ env.BRANCH }}
+          user: ${{ env.USER }}
+          config_timezone: ${{ env.TIMEZONE }}
           filename: profile/metrics.languages.svg
+          base: ""
           repositories_affiliations: owner, organization_member
           repositories_forks: no
           plugin_languages: yes
@@ -32,108 +53,176 @@ jobs:
           plugin_languages_limit: 8
           plugin_languages_other: yes
           plugin_languages_analysis_timeout: 30
-          config_timezone: Asia/Taipei
 
-      # 2. 組織基本資訊
-      - name: Generate base SVG
+      # ═══════════════════════════════════════════════════════════════
+      # 組織成員與專案
+      # ═══════════════════════════════════════════════════════════════
+
+      # 3. 貢獻者與成員
+      - name: 👥 People
         uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.PAT_CLASSIC_TOKEN }}
           output_action: commit
-          committer_branch: main
-          user: ExpTechTW
-          filename: profile/metrics.base.svg
-          base: header, activity, community, repositories
-          repositories_affiliations: owner, organization_member
-          config_timezone: Asia/Taipei
-
-      # 3. 貢獻日曆（等距視圖）
-      - name: Generate isocalendar SVG
-        uses: lowlighter/metrics@latest
-        with:
-          token: ${{ secrets.PAT_CLASSIC_TOKEN }}
-          output_action: commit
-          committer_branch: main
-          user: ExpTechTW
+          committer_branch: ${{ env.BRANCH }}
+          user: ${{ env.USER }}
+          config_timezone: ${{ env.TIMEZONE }}
+          filename: profile/metrics.people.svg
           base: ""
-          filename: profile/metrics.isocalendar.svg
-          plugin_isocalendar: yes
-          plugin_isocalendar_duration: half-year
-          config_timezone: Asia/Taipei
-
-      # 4. 近期活動
-      - name: Generate activity SVG
-        uses: lowlighter/metrics@latest
-        with:
-          token: ${{ secrets.PAT_CLASSIC_TOKEN }}
-          output_action: commit
-          committer_branch: main
-          user: ExpTechTW
-          base: ""
-          filename: profile/metrics.activity.svg
-          plugin_activity: yes
-          plugin_activity_limit: 5
-          plugin_activity_days: 14
-          plugin_activity_filter: all
-          config_timezone: Asia/Taipei
-
-      # 5. 熱門 Repositories
-      - name: Generate repositories SVG
-        uses: lowlighter/metrics@latest
-        with:
-          token: ${{ secrets.PAT_CLASSIC_TOKEN }}
-          output_action: commit
-          committer_branch: main
-          user: ExpTechTW
-          base: ""
-          filename: profile/metrics.repositories.svg
-          plugin_repositories: yes
-          plugin_repositories_featured: ExpTechTW/TREM-tauri, ExpTechTW/DPIP  # 替換成你想展示的 repo
-          config_timezone: Asia/Taipei
-
-      # 6. 貢獻者
-      - name: Generate contributors SVG
-        uses: lowlighter/metrics@latest
-        with:
-          token: ${{ secrets.PAT_CLASSIC_TOKEN }}
-          output_action: commit
-          committer_branch: main
-          user: ExpTechTW
-          base: ""
-          filename: profile/metrics.contributors.svg
           plugin_people: yes
           plugin_people_types: contributors, members
           plugin_people_limit: 24
           plugin_people_size: 28
-          config_timezone: Asia/Taipei
 
-      # 7. 星星歷史
-      - name: Generate stargazers SVG
+      # 4. 精選專案
+      - name: 📦 Repositories
         uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.PAT_CLASSIC_TOKEN }}
           output_action: commit
-          committer_branch: main
-          user: ExpTechTW
+          committer_branch: ${{ env.BRANCH }}
+          user: ${{ env.USER }}
+          config_timezone: ${{ env.TIMEZONE }}
+          filename: profile/metrics.repositories.svg
           base: ""
+          plugin_repositories: yes
+          plugin_repositories_featured: ExpTechTW/TREM-tauri, ExpTechTW/DPIP
+
+      # ═══════════════════════════════════════════════════════════════
+      # 活動與統計
+      # ═══════════════════════════════════════════════════════════════
+
+      # 5. 近期活動
+      - name: 📰 Activity
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.PAT_CLASSIC_TOKEN }}
+          output_action: commit
+          committer_branch: ${{ env.BRANCH }}
+          user: ${{ env.USER }}
+          config_timezone: ${{ env.TIMEZONE }}
+          filename: profile/metrics.activity.svg
+          base: ""
+          plugin_activity: yes
+          plugin_activity_limit: 5
+          plugin_activity_days: 14
+          plugin_activity_filter: all
+
+      # 6. 星星歷史
+      - name: ⭐ Stargazers
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.PAT_CLASSIC_TOKEN }}
+          output_action: commit
+          committer_branch: ${{ env.BRANCH }}
+          user: ${{ env.USER }}
+          config_timezone: ${{ env.TIMEZONE }}
           filename: profile/metrics.stargazers.svg
+          base: ""
           plugin_stargazers: yes
           plugin_stargazers_charts_type: classic
-          config_timezone: Asia/Taipei
 
-      # 8. 程式碼習慣
-      - name: Generate habits SVG
+      # ═══════════════════════════════════════════════════════════════
+      # 組織專屬指標
+      # ═══════════════════════════════════════════════════════════════
+
+      # 7. 程式碼行數統計
+      - name: 📏 Lines of Code
         uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.PAT_CLASSIC_TOKEN }}
           output_action: commit
-          committer_branch: main
-          user: ExpTechTW
+          committer_branch: ${{ env.BRANCH }}
+          user: ${{ env.USER }}
+          config_timezone: ${{ env.TIMEZONE }}
+          filename: profile/metrics.lines.svg
           base: ""
-          filename: profile/metrics.habits.svg
-          plugin_habits: yes
-          plugin_habits_facts: yes
-          plugin_habits_charts: yes
-          plugin_habits_days: 14
-          plugin_habits_from: 200
-          config_timezone: Asia/Taipei
+          plugin_lines: yes
+          plugin_lines_sections: base, repositories
+          repositories_affiliations: owner, organization_member
+
+      # 8. 討論統計
+      - name: 💬 Discussions
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.PAT_CLASSIC_TOKEN }}
+          output_action: commit
+          committer_branch: ${{ env.BRANCH }}
+          user: ${{ env.USER }}
+          config_timezone: ${{ env.TIMEZONE }}
+          filename: profile/metrics.discussions.svg
+          base: ""
+          plugin_discussions: yes
+          plugin_discussions_categories_limit: 8
+
+      # 9. Issue/PR 追蹤
+      - name: 🔄 Follow-up
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.PAT_CLASSIC_TOKEN }}
+          output_action: commit
+          committer_branch: ${{ env.BRANCH }}
+          user: ${{ env.USER }}
+          config_timezone: ${{ env.TIMEZONE }}
+          filename: profile/metrics.followup.svg
+          base: ""
+          plugin_followup: yes
+          plugin_followup_sections: repositories
+          plugin_followup_indepth: yes
+
+      # 10. 組織簡介
+      - name: 👋 Introduction
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.PAT_CLASSIC_TOKEN }}
+          output_action: commit
+          committer_branch: ${{ env.BRANCH }}
+          user: ${{ env.USER }}
+          config_timezone: ${{ env.TIMEZONE }}
+          filename: profile/metrics.introduction.svg
+          base: ""
+          plugin_introduction: yes
+          plugin_introduction_title: yes
+
+      # 11. 授權分佈
+      - name: 📜 Licenses
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.PAT_CLASSIC_TOKEN }}
+          output_action: commit
+          committer_branch: ${{ env.BRANCH }}
+          user: ${{ env.USER }}
+          config_timezone: ${{ env.TIMEZONE }}
+          filename: profile/metrics.licenses.svg
+          base: ""
+          plugin_licenses: yes
+          plugin_licenses_setup: ""
+          plugin_licenses_ratio: yes
+
+      # 12. 流量統計
+      - name: 👀 Traffic
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.PAT_CLASSIC_TOKEN }}
+          output_action: commit
+          committer_branch: ${{ env.BRANCH }}
+          user: ${{ env.USER }}
+          config_timezone: ${{ env.TIMEZONE }}
+          filename: profile/metrics.traffic.svg
+          base: ""
+          plugin_traffic: yes
+
+      # 13. 贊助者
+      - name: 💖 Sponsors
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.PAT_CLASSIC_TOKEN }}
+          output_action: commit
+          committer_branch: ${{ env.BRANCH }}
+          user: ${{ env.USER }}
+          config_timezone: ${{ env.TIMEZONE }}
+          filename: profile/metrics.sponsors.svg
+          base: ""
+          plugin_sponsors: yes
+          plugin_sponsors_sections: goal, list
+          plugin_sponsors_size: 24
