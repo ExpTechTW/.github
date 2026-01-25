@@ -4,3 +4,73 @@
 \
 [![Discord](https://img.shields.io/discord/926545182407688273?style=flat-square&logo=discord&logoColor=fff&label=ExpTech%20Studio&color=%235865F2)](https://discord.gg/exptech-studio)
 </div>
+
+---
+
+## About
+
+![Introduction](metrics.introduction.svg)
+
+---
+
+## Statistics
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="metrics.base.svg" alt="Base Stats" />
+    </td>
+    <td align="center">
+      <img src="metrics.languages.svg" alt="Languages" />
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="metrics.lines.svg" alt="Lines of Code" />
+    </td>
+    <td align="center">
+      <img src="metrics.stargazers.svg" alt="Stargazers" />
+    </td>
+  </tr>
+</table>
+
+---
+
+## Activity
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="metrics.activity.svg" alt="Recent Activity" />
+    </td>
+    <td align="center">
+      <img src="metrics.followup.svg" alt="Follow-up" />
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="metrics.discussions.svg" alt="Discussions" />
+    </td>
+    <td align="center">
+      <img src="metrics.traffic.svg" alt="Traffic" />
+    </td>
+  </tr>
+</table>
+
+---
+
+## Featured Projects
+
+![Repositories](metrics.repositories.svg)
+
+---
+
+## Team
+
+![People](metrics.people.svg)
+
+---
+
+## Sponsors
+
+![Sponsors](metrics.sponsors.svg)
