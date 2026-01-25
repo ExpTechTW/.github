@@ -18,7 +18,7 @@ jobs:
         uses: lowlighter/metrics@latest
         with:
           # PAT token（需要 repo 和 read:org 權限）
-          token: ${{ secrets.PAT_TOKEN }}
+          token: ${{ secrets.PAT_CLASSIC_TOKEN }}
 
           # 輸出設定
           output_action: commit
