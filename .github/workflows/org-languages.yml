@@ -23,7 +23,7 @@ jobs:
 
       # 1. 組織基本資訊
       - name: 📊 Base
-        uses: lowlighter/metrics@latest
+        uses: lowlighter/metrics@65836723097537a54cd8eb90f61839426b4266b6 # = @latest (v3.34), pinned 2026-11-21; image ghcr.io/lowlighter/metrics:v3.34
         with:
           token: ${{ secrets.PAT_CLASSIC_TOKEN }}
           output_action: commit
@@ -35,7 +35,7 @@ jobs:
 
       # 2. 語言統計
       - name: 💻 Languages
-        uses: lowlighter/metrics@latest
+        uses: lowlighter/metrics@65836723097537a54cd8eb90f61839426b4266b6 # = @latest (v3.34), pinned 2026-11-21; image ghcr.io/lowlighter/metrics:v3.34
         with:
           token: ${{ secrets.PAT_CLASSIC_TOKEN }}
           output_action: commit
@@ -57,7 +57,7 @@ jobs:
 
       # 3. 成員
       - name: 👥 Members
-        uses: lowlighter/metrics@latest
+        uses: lowlighter/metrics@65836723097537a54cd8eb90f61839426b4266b6 # = @latest (v3.34), pinned 2026-11-21; image ghcr.io/lowlighter/metrics:v3.34
         with:
           token: ${{ secrets.PAT_CLASSIC_TOKEN }}
           output_action: commit
@@ -73,7 +73,7 @@ jobs:
 
       # 4. 精選專案
       - name: 📦 Repositories
-        uses: lowlighter/metrics@latest
+        uses: lowlighter/metrics@65836723097537a54cd8eb90f61839426b4266b6 # = @latest (v3.34), pinned 2026-11-21; image ghcr.io/lowlighter/metrics:v3.34
         with:
           token: ${{ secrets.PAT_CLASSIC_TOKEN }}
           output_action: commit
@@ -91,7 +91,7 @@ jobs:
 
       # 5. 星星歷史
       - name: ⭐ Stargazers
-        uses: lowlighter/metrics@latest
+        uses: lowlighter/metrics@65836723097537a54cd8eb90f61839426b4266b6 # = @latest (v3.34), pinned 2026-11-21; image ghcr.io/lowlighter/metrics:v3.34
         with:
           token: ${{ secrets.PAT_CLASSIC_TOKEN }}
           output_action: commit
@@ -105,7 +105,7 @@ jobs:
 
       # 6. Issue/PR 追蹤
       - name: 🔄 Follow-up
-        uses: lowlighter/metrics@latest
+        uses: lowlighter/metrics@65836723097537a54cd8eb90f61839426b4266b6 # = @latest (v3.34), pinned 2026-11-21; image ghcr.io/lowlighter/metrics:v3.34
         with:
           token: ${{ secrets.PAT_CLASSIC_TOKEN }}
           output_action: commit
@@ -119,7 +119,7 @@ jobs:
 
       # 7. 組織簡介
       - name: 👋 Introduction
-        uses: lowlighter/metrics@latest
+        uses: lowlighter/metrics@65836723097537a54cd8eb90f61839426b4266b6 # = @latest (v3.34), pinned 2026-11-21; image ghcr.io/lowlighter/metrics:v3.34
         with:
           token: ${{ secrets.PAT_CLASSIC_TOKEN }}
           output_action: commit
